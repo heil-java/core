@@ -1,4 +1,4 @@
-package com.heilcoder.core.pojo;
+package com.heilcoder.common.api.vo;
 
 import java.io.Serializable;
 import lombok.ToString;

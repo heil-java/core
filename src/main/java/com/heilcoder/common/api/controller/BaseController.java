@@ -1,6 +1,6 @@
-package com.heilcoder.core.controller;
+package com.heilcoder.common.api.controller;
 
-import com.heilcoder.core.pojo.Response;
+import com.heilcoder.common.api.vo.Response;
 
 import org.springframework.web.bind.annotation.RestController;
 
