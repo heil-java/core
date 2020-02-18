@@ -1,4 +1,4 @@
-package com.heilcoder.common.api.vo;
+package com.easychn.common.api.vo;
 
 import java.io.Serializable;
 import lombok.ToString;
