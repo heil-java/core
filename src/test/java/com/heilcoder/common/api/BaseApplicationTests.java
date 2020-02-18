@@ -1,15 +1,15 @@
-package com.heilcoder.core;
+package com.heilcoder.common.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.heilcoder.core.controller.BaseController;
+import com.heilcoder.common.api.controller.BaseController;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CoreApplicationTests extends BaseController{
+public class BaseApplicationTests extends BaseController{
 
 	@Test
 	public void successTest() {
