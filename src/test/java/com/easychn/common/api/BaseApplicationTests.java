@@ -1,11 +1,11 @@
-package com.heilcoder.common.api;
+package com.easychn.common.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.heilcoder.common.api.controller.BaseController;
+import com.easychn.common.api.controller.BaseController;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

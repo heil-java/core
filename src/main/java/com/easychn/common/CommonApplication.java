@@ -1,4 +1,4 @@
-package com.heilcoder.common;
+package com.easychn.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,6 @@
-package com.heilcoder.common.api.controller;
+package com.easychn.common.api.controller;
 
-import com.heilcoder.common.api.vo.Response;
+import com.easychn.common.api.vo.Response;
 
 import org.springframework.web.bind.annotation.RestController;
 
