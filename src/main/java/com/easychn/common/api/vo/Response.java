@@ -40,74 +40,74 @@ public class Response<T> implements Serializable{
 		this.message = ERROR_MESSAGE;
     }
 
-	public Response success() {
+	public Response<T> success() {
 		this.code = SUCCESS;
 		this.message = SUCCESS_MESSAGE;
         this.data = null;
         return this;
 	}
-	public Response success(String message) {
+	public Response<T> success(String message) {
 		this.code = SUCCESS;
 		this.message = (message == null || message.length() <= 0) ? SUCCESS_MESSAGE : message;
         this.data = null;
         return this;
 	}
-	public Response success(T data) {
+	public Response<T> success(T data) {
 		this.code = SUCCESS;
 		this.message = SUCCESS_MESSAGE;
 		this.data = data;
         return this;
 	}
-	public Response success(String message,T data) {
+	public Response<T> success(String message,T data) {
 		this.code = SUCCESS;
 		this.message = (message == null || message.length() <= 0) ? SUCCESS_MESSAGE : message;
 		this.data = data;
         return this;
 	}
 	
-	public Response error() {
+	public Response<T> error() {
 		this.code = ERROR;
 		this.message = ERROR_MESSAGE;
         this.data = null;
         return this;
 	}
-	public Response error(Integer code) {
+	public Response<T> error(Integer code) {
 		this.code = (code == null || code.equals(SUCCESS)) ? ERROR : code;
 		this.message = ERROR_MESSAGE;
         this.data = null;
         return this;
 	}
-	public Response error(String message ) {
+	public Response<T> error(String message ) {
 		this.code = ERROR;
 		this.message = (message == null || message.length() <= 0) ? ERROR_MESSAGE : message;
         this.data = null;
         return this;
 	}
-	public Response error(T data) {
+	public Response<T> error(T data) {
 		this.code = ERROR;
 		this.message = ERROR_MESSAGE;
 		this.data = data;
         return this;
 	}
-	public Response error(Integer code,String message) {
+	public Response<T> error(Integer code,String message) {
 		this.code = (code == null || code.equals(SUCCESS)) ? ERROR : code;
 		this.message = (message == null || message.length() <= 0) ? ERROR_MESSAGE : message;
         this.data = null;
         return this;
 	}
-	public Response error(Integer code,T data) {
+	public Response<T> error(Integer code,T data) {
 		this.code = (code == null || code.equals(SUCCESS)) ? ERROR : code;
 		this.message = ERROR_MESSAGE;
 		this.data = data;
         return this;
 	}
-	public Response error(String message,T data) {
+	public Response<T> error(String message,T data) {
 		this.code = ERROR;
 		this.message = (message == null || message.length() <= 0) ? ERROR_MESSAGE : message;
 		this.data = data;
         return this;
 	}
-	public Response error(Integer code,String message,T data) {
+	public Response<T> error(Integer code,String message,T data) {
 		this.code = (code == null || code.equals(SUCCESS)) ? ERROR : code;
 		this.message = (message == null || message.length() <= 0) ? ERROR_MESSAGE : message;
 		this.data = data;
