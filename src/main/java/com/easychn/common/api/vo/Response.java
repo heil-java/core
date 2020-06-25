@@ -2,14 +2,9 @@ package com.easychn.common.api.vo;
 
 import java.io.Serializable;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;;
 
-@ToString
 @ApiModel(value = "响应消息")
 public class Response<T> implements Serializable{
     private static final long serialVersionUID = 1L;
@@ -20,18 +15,12 @@ public class Response<T> implements Serializable{
 	private static final Integer ERROR = 1;
 	private static final String ERROR_MESSAGE = "操作失败";
 	
-	@Getter
-	@Setter
     @ApiModelProperty(value = "状态代码",required = true)
 	private Integer code;
 	
-	@Getter
-	@Setter
     @ApiModelProperty(value = "描述",required = true)
 	private String message;
 
-	@Getter
-	@Setter
     @ApiModelProperty(value = "描述",required = true)
 	private T data;
 	
