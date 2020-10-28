@@ -68,7 +68,7 @@ public class Response<T> implements Serializable{
 	@ApiModelProperty(value = "描述",required = true)
 	private String message;
 
-    @ApiModelProperty(value = "描述",required = true)
+    @ApiModelProperty(value = "实体对象数据",required = true)
 	private T data;
 	
     public Response (){
